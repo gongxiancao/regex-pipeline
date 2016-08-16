@@ -1,0 +1,33 @@
+{
+  "name": "regex-pipeline",
+  "version": "1.0.0",
+  "description": "a module to extract text from complex string using regular expression pipeline",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongxiancao/regex-pipeline.git"
+  },
+  "author": "GongXian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gongxiancao/regex-pipeline/issues"
+  },
+  "homepage": "https://github.com/gongxiancao/regex-pipeline#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "run-sequence": "^1.2.2",
+    "should": "^11.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
