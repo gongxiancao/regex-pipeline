@@ -26,7 +26,9 @@ gulp.task('mocha', function() {
 });
 
 gulp.task('browserify', function() {
-  return browserify('./index.js')
+  return browserify('./index.js', {
+    standalone: 'RegExPipeline'
+  })
     .bundle()
     //Pass desired output filename to vinyl-source-stream
     .pipe(source('regex-pipeline.js'))

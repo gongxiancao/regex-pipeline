@@ -1,7 +1,7 @@
 {
   "name": "regex-pipeline",
   "description": "a module to extract text from complex string using regular expression pipeline",
-  "main": "dist/regexp-pipeline.js",
+  "main": "dist/regex-pipeline.js",
   "authors": [
     "GongXian"
   ],

@@ -1,6 +1,6 @@
 {
   "name": "regex-pipeline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a module to extract text from complex string using regular expression pipeline",
   "main": "index.js",
   "directories": {
