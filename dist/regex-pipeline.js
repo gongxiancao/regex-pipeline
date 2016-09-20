@@ -18,7 +18,8 @@ function voidProcessor() {
 function compileProcessor(processor, pins) {
   if(!pins) {
     return function (input) {
-      return (input.match(processor) || []).slice(1);
+      var matches = input.match(processor);
+      return matches? matches.slice(1) : null;
     };
   }
   if(!(processor instanceof RegExp)) {

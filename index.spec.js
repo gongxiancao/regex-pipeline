@@ -19,5 +19,15 @@ describe('RegExPipeline' , function () {
     matches[0][2][0].should.be.equal('Minor');
     done();
   });
+  it('match with unmatch input should fail', function (done) {
+    var pipeline = [
+      /^duplicate key error, your ID field is not exported from our platform/
+    ];
+    pipeline = new RegExPipeline(pipeline);
+    var message = 'Error: required column UUID is not provided,required column Major is not provided,required column Minor is not provided\n    at module.exports.doImport (/Users/fool/project/helloworld/Worker1/server/worker.js:96:19)\nFrom previous event:\n    at /Users/fool/project/helloworld/Worker1/server/worker.js:13:50\n';
+    var matches = pipeline.match(message);
+    should.equal(matches, null);
+    done();
+  });
 });
 
